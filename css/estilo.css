@@ -15,12 +15,8 @@ body {
     position:absolute;
     top: 50px;
     left: 10px;
+    border-radius: 150px;
 }
-
-
-
-
-
 
 @keyframes animacion {
     10%{transform: rotate(36deg);}
@@ -38,11 +34,9 @@ body {
     animation-name: animacion;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-delay: 1s;
-
 }
-
 
 .logoDos {
 
@@ -50,42 +44,15 @@ body {
     width: 100%;
     background-image: url(../img/Logo\ 2.png);
     background-size: cover;
-    
 }
-    /* position:relative
-} */
+
+@media (max-width: 650px) {
+    .logoDos {
+        bacgr
+    }
+}
 
 /*    Menú de navegación */ 
-
-a {
-    text-decoration: none;
-}
-
-.menuNavegacion {
-    text-align: right;
-}
-.menuUno {
-    display:inline;
-    border: 1px solid   black; 
-    padding: 10px;
-    
-}
-.menuDos {
-    display: inline;
-    border: 1px solid   black;
-    padding: 10px; 
-}
-.menuTres {
-    display: inline;
-    border: 1px solid   black; 
-    padding: 10px;
-}
-.menuCuatro {
-    display: inline;
-    border: 1px solid   black; 
-    padding: 10px;
-}
-
 
 
 /*     estilo index */
@@ -97,57 +64,19 @@ main {
 
 }
 
-.inicio {
-    display: grid;
-
-    grid-template-areas: 
-    "presetitulo presetitulo presetitulo"
-    "presetexto presetexto presefoto"
-    "atentitulo atentitulo atentitulo"
-    "atenfoto atentexto atentexto"
-    ;
-
-}
-
-.presentacionTitulo {
-    grid-area: presetitulo;
-    /* margin-left: 20px; */
-}
-
-.presentacionTexto {
-    grid-area: presetexto;
-    /* position: absolute;
-    left: 20px; */
-}
-
-.fotoPresentacion {
-    grid-area: presefoto;
+.presentacionFoto {
     text-align: center;
-    /* margin-left: 75%; */
 }
 
-.preseimg {
-    width: 300px;
 
-}
 .atencionTitulo {
- text-align: right;
- grid-area: atentitulo;
- /* margin-right: 20px; */
-}
-
-.atencionTexto {
-     grid-area: atentexto;
-    margin-left: 3%;
+    text-align: right;
 }
 
 .atencionFoto {
-    width: 25%;
-    grid-area: atenfoto;
-    /* position: absolute;
-    top: 60px;
-    margin-left: 20px; */
+    text-align: center;
 }
+
 
 
 /*     footer  */
@@ -160,8 +89,8 @@ footer {
 
 .footerLogo {
     border: 1px solid  rgb(128, 10, 10);
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     margin-left: 47%;
     margin-top: 30px;
 }
@@ -269,8 +198,10 @@ footer {
 .consultorios p {
     font-weight: bold;
 }
-.consultorios img {
-width: 600px;
+.carousel {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 10%;
 }
 
 /*     contacto   */
